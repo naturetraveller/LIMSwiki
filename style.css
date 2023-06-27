@@ -27,7 +27,7 @@ header {
 .language-navbar {
   /* Styles for the language navigation bar */
   /* Adjust the styles based on your preferences */
-  position: fixed;
+  position: relative;
   top: 0;
   right: 0;
   background-color: #f1f1f1;
