@@ -1,51 +1,37 @@
-/* Styles for the header and navigation bar */
-header {
-  text-align: center;
-  padding: 20px;
-}
-
-.navbar {
-  background-color: #f1f1f1;
-  overflow: hidden;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: #333;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size
-}
-
-.navbar a.active {
-  color: #FFF;
-  background-color: #006400; /* Dark green */
-}
-
 .language-navbar {
-  /* Styles for the language navigation bar */
-  /* Adjust the styles based on your preferences */
-  position: relative;
-  top: 0;
-  right: 0;
-  background-color: #f1f1f1;
-  padding: 10px;
-  display: flex;
+    background-color: #f8f9fa;
+    padding: 10px;
 }
 
-.language-navbar a {
-  /* Styles for language navigation links */
-  /* Adjust the styles based on your preferences */
-  margin-right: 10px;
-  color: #333;
-  text-decoration: none;
+.language-navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-.language-navbar a.active {
-  /* Styles for the active language link */
-  /* Adjust the styles based on your preferences */
-  font-weight: bold;
-  color: rgb(17, 88, 194);
+.language-navbar li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.language-navbar li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.language-navbar li a.active {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px;
 }
