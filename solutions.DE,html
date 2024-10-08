@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Erfahren Sie mehr über unsere umfassenden Labormanagement-Lösungen einschließlich Integration, Datenmanagement und Compliance.">
+  <meta name="keywords" content="Labormanagement Lösungen, Datenmanagement, Laborintegration, Compliance">
+  <title>Labormanagement-Lösungen</title>
+  <link href="style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+  <!-- Language navbar -->
+  <nav class="language-navbar">
+    <ul>
+      <li><a href="solutions.html">EN</a></li>
+      <li><a href="solutions_DE.html" class="active">DE</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main navigation with tiles -->
+  <nav class="main-navbar">
+    <ul>
+      <li><a href="products_DE.html">Produkte</a></li>
+      <li><a href="solutions_DE.html" class="active">Lösungen</a></li>
+      <li><a href="history_DE.html">Geschichte</a></li>
+      <li><a href="lab4_DE.html">Labor 4.0</a></li>
+      <li><a href="contact_DE.html">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <h1>Unsere Labormanagement-Lösungen</h1>
+  
+  <p>Wir bieten umfassende Lösungen für die digitale Transformation Ihres Labors. Unsere Systeme integrieren sich nahtlos in Ihre bestehenden Prozesse, um Arbeitsabläufe zu optimieren und die Effizienz zu steigern.</p>
+  <ul>
+    <li><strong>Laborintegration:</strong> Vollständige Vernetzung Ihrer Laborgeräte und -systeme.</li>
+    <li><strong>Datenmanagement:</strong> Zentrale Speicherung und Abruf aller Labordaten.</li>
+    <li><strong>Compliance & Sicherheit:</strong> Gewährleistung der Einhaltung gesetzlicher Vorschriften und der Datensicherheit.</li>
+  </ul>
+
+  <footer>
+    <p>&copy; 2024 LIMS Unternehmen. Alle Rechte vorbehalten.</p>
+  </footer>
+</body>
+</html>
