@@ -1,11 +1,93 @@
-/* Styling for the banner section with a background image */
+/* Basic page styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+p {
+  margin: 0 20px 20px 20px;
+  line-height: 1.6;
+}
+
+/* Language navbar styling */
+.language-navbar {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.language-navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.language-navbar li {
+  display: inline;
+  margin-left: 10px;
+}
+
+.language-navbar a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.language-navbar a.active {
+  font-weight: bold;
+  color: #0056b3;
+}
+
+/* Main navigation styling (square tiles) */
+.main-navbar {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.main-navbar ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-navbar li {
+  margin: 10px;
+}
+
+.main-navbar a {
+  display: block;
+  padding: 20px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  width: 150px;
+  height: 100px;
+  line-height: 2.5;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.main-navbar a:hover {
+  background-color: #0056b3;
+}
+
+/* Banner section styling */
 .banner-section {
   position: relative;
   background: url('bannerDigitallabs4.0.webp') no-repeat center center; /* Background image */
   background-size: cover; /* Ensures the image covers the entire section */
-  color: white; /* Text color to ensure readability */
-  padding: 100px 20px; /* Adds spacing for content */
-  text-align: center;
+  color: white; /* White text for readability */
+  padding: 100px 20px; /* Adds padding for text */
   z-index: 1;
 }
 
@@ -16,8 +98,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent overlay */
-  z-index: -1; /* Sends the overlay behind the content */
+  background-color: rgba(0, 0, 0, 0.3); /* Transparent overlay over the image */
+  z-index: -1; /* Behind the text */
 }
 
 h1 {
@@ -35,4 +117,15 @@ ul {
 
 ul li {
   padding: 10px 0;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
