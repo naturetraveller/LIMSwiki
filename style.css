@@ -152,3 +152,18 @@ ul li strong {
   font-weight: bold;
   color: #4da6ff; /* Optional: Adds a color to highlight bold text */
 }
+
+.accordion {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+}
+.panel {
+  display: none;
+  padding: 10px;
+  background-color: #222;
+}

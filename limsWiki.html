@@ -7,14 +7,52 @@
   <meta name="keywords" content="LIMS, ELN, LES, Lab Informatics, Laboratory Management">
   <title>LIMS Wiki</title>
   <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".accordion").forEach((button) => {
+        button.addEventListener("click", function () {
+          this.classList.toggle("active");
+          let panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      });
+    });
+  </script>
+  <style>
+    .accordion {
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+    .accordion:hover {
+      background-color: #4da6ff;
+    }
+    .panel {
+      display: none;
+      background-color: #1f1f1f;
+      padding: 15px;
+      border-left: 4px solid #4da6ff;
+    }
+  </style>
 </head>
 
 <body>
   <!-- Language navbar -->
   <nav class="language-navbar">
     <ul>
-      <li><a href="lims_wiki.html" class="active">EN</a></li>
-      <li><a href="lims_wiki_DE.html">DE</a></li>
+      <li><a href="limsWiki.html" class="active">EN</a></li>
+      <li><a href="limsWiki_DE.html">DE</a></li>
     </ul>
   </nav>
 
@@ -33,17 +71,34 @@
   </header>
   
   <main>
-    <section>
-      <h2>What is a LIMS?</h2>
+    <button class="accordion">What is a LIMS?</button>
+    <div class="panel">
       <p>A Laboratory Information Management System (LIMS) is a software solution designed to manage samples, data, and laboratory workflows efficiently.</p>
+    </div>
+    
+    <button class="accordion">LIMS vs. ELN vs. LES</button>
+    <div class="panel">
+      <p>Each of these systems has a different focus: LIMS is for data/sample management, ELN is for digital lab notebooks, and LES is for standardized workflows.</p>
+    </div>
+    
+    <button class="accordion">Key Features of LIMS</button>
+    <div class="panel">
       <ul>
-        <li><strong>LIMS:</strong> Automates sample and data management.</li>
-        <li><strong>ELN:</strong> Electronic lab notebooks for structured documentation.</li>
-        <li><strong>LES:</strong> Standardized and automated laboratory workflows.</li>
-        <li><strong>SDMS:</strong> Secure storage and management of large scientific datasets.</li>
-        <li><strong>CDS:</strong> Chromatography data systems for precision analysis.</li>
+        <li><strong>Sample Management:</strong> Tracks and organizes samples.</li>
+        <li><strong>Data Integration:</strong> Connects with instruments and databases.</li>
+        <li><strong>Regulatory Compliance:</strong> Supports FDA 21 CFR Part 11, ISO 17025.</li>
       </ul>
-    </section>
+    </div>
+    
+    <button class="accordion">Regulatory Compliance</button>
+    <div class="panel">
+      <p>Ensures compliance with GxP, ALCOA+, and other regulations in laboratory environments.</p>
+    </div>
+    
+    <button class="accordion">Popular LIMS Vendors</button>
+    <div class="panel">
+      <p>Top LIMS providers include LabWare, STARLIMS, LabVantage, and open-source alternatives like Bika LIMS.</p>
+    </div>
   </main>
   
   <footer>
