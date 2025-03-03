@@ -1,13 +1,15 @@
-/* Basic page styling */
+/* Basic dark theme styling */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #121212;
+  color: #e0e0e0;
 }
 
 h1, h2 {
   text-align: center;
+  color: #ffffff;
 }
 
 p {
@@ -34,12 +36,12 @@ p {
 
 .language-navbar a {
   text-decoration: none;
-  color: #007bff;
+  color: #4da6ff;
 }
 
 .language-navbar a.active {
   font-weight: bold;
-  color: #0056b3;
+  color: #ffffff;
 }
 
 /* Main navigation styling (square tiles) */
@@ -64,7 +66,7 @@ p {
 .main-navbar a {
   display: block;
   padding: 20px;
-  background-color: #007bff;
+  background-color: #1f1f1f;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -78,16 +80,16 @@ p {
 }
 
 .main-navbar a:hover {
-  background-color: #0056b3;
+  background-color: #4da6ff;
 }
 
 /* Banner section styling */
 .banner-section {
   position: relative;
-  background: url('bannerDigitallabs4.0.webp') no-repeat center center; /* Background image */
-  background-size: cover; /* Ensures the image covers the entire section */
-  color: white; /* White text for readability */
-  padding: 100px 20px; /* Adds padding for text */
+  background: url('bannerDigitallabs4.0.webp') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 100px 20px;
   z-index: 1;
 }
 
@@ -98,8 +100,8 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3); /* Transparent overlay over the image */
-  z-index: -1; /* Behind the text */
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
 }
 
 h1 {
@@ -123,7 +125,7 @@ ul li {
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #333;
+  background-color: #1f1f1f;
   color: white;
   position: fixed;
   bottom: 0;
