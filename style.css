@@ -155,15 +155,23 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
   .main-navbar ul {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;           /* bleibt horizontal */
+    flex-wrap: nowrap;             /* kein Umbrechen */
+    overflow-x: auto;              /* erlaubt horizontales Scrollen */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .main-navbar li {
+    flex: 0 0 auto;
+    margin: 5px;
   }
 
   .main-navbar a {
-    width: 90%;
-    height: auto;
-    padding: 15px;
-    font-size: 16px;
+    width: 100px;
+    height: 80px;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.2;
   }
 
   .accordion {
@@ -187,9 +195,22 @@ footer {
   }
 
   .language-navbar {
-    top: auto;
+    position: fixed;
     bottom: 10px;
     right: 10px;
+    background-color: #1f1f1f;
+    padding: 5px 10px;
+    border-radius: 8px;
+    z-index: 1000;
+  }
+
+  .language-navbar ul {
+    display: flex;
+    gap: 10px;
+  }
+
+  .language-navbar li {
+    margin: 0;
   }
 }
 
