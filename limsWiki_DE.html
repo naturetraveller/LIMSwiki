@@ -3,14 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="LIMS Wiki - Umfassende Informationen zu LIMS, ELN und LES Systemen.">
-  <meta name="keywords" content="LIMS, ELN, LES, Laborinformatik, Labormanagement">
+  <meta name="description" content="LIMS Wiki – Umfassende Informationen zu LIMS, ELN und LES Systemen.">
+  <meta name="keywords" content="LIMS, ELN, LES, Laborinformatik, Labormanagement, GxP, ISO 17025, FDA 21 CFR Part 11, ALCOA+">
   <title>LIMS Wiki</title>
   <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".accordion").forEach((button) => {
+        button.addEventListener("click", function () {
+          this.classList.toggle("active");
+          let panel = this.nextElementSibling;
+          panel.style.display = (panel.style.display === "block") ? "none" : "block";
+        });
+      });
+    });
+  </script>
+  <style>
+    .accordion {
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+    .accordion:hover {
+      background-color: #4da6ff;
+    }
+    .panel {
+      display: none;
+      background-color: #1f1f1f;
+      padding: 15px;
+      border-left: 4px solid #4da6ff;
+    }
+  </style>
 </head>
 
 <body>
-  <!-- Sprachwahl Navbar -->
+  <!-- Sprach-Navigation -->
   <nav class="language-navbar">
     <ul>
       <li><a href="limsWiki.html">EN</a></li>
@@ -18,10 +51,10 @@
     </ul>
   </nav>
 
-  <!-- Hauptnavigation mit Kacheln -->
+  <!-- Hauptnavigation -->
   <nav class="main-navbar">
     <ul>
-      <li><a href="index_DE.html">Startseite</a></li>      
+      <li><a href="index_DE.html">Startseite</a></li>
       <li><a href="limsWiki_DE.html" class="active">LIMS Wiki</a></li>
       <li><a href="lab4_DE.html">Labor 4.0</a></li>
       <li><a href="contact_DE.html">Kontakt</a></li>
@@ -29,33 +62,91 @@
   </nav>
 
   <header>
-      <h1>LIMS Wiki</h1>
+    <h1>LIMS Wiki</h1>
   </header>
-  
+
   <main>
-    <section>
-      <h2>Was ist ein LIMS?</h2>
-      <p>Ein Laboratory Information Management System (LIMS) ist eine Softwarelösung zur effizienten Verwaltung von Proben, Daten und Laborabläufen.</p>
+    <button class="accordion">Was ist ein LIMS?</button>
+    <div class="panel">
+      <p>Ein Laboratory Information Management System (LIMS) ist eine spezialisierte Softwarelösung zur Steigerung der Effizienz und Effektivität von Laborabläufen. Es automatisiert Workflows, verwaltet Proben, integriert Instrumente und unterstützt die Datennachverfolgung und -analyse. LIMS-Systeme helfen Laboren, Prozesse zu vereinfachen, manuelle Fehler zu reduzieren und regulatorischen Anforderungen gerecht zu werden.</p>
+      <h3>Wichtige Funktionen und Vorteile:</h3>
       <ul>
-        <li><strong>LIMS:</strong> Automatisiertes Proben- und Datenmanagement.</li>
-        <li><strong>ELN:</strong> Elektronische Labornotizbücher für strukturierte Dokumentation.</li>
-        <li><strong>LES:</strong> Standardisierte und automatisierte Laborabläufe.</li>
-        <li><strong>SDMS:</strong> Sichere Speicherung und Verwaltung großer wissenschaftlicher Datensätze.</li>
-        <li><strong>CDS:</strong> Chromatografie-Datensysteme für präzise Analysen.</li>
+        <li><strong>Probenmanagement:</strong> Verfolgt und organisiert Proben im gesamten Lebenszyklus.</li>
+        <li><strong>Workflow-Automatisierung:</strong> Reduziert manuelle Tätigkeiten und erhöht die Produktivität.</li>
+        <li><strong>Datenintegration:</strong> Verbindet Laborgeräte und externe Systeme.</li>
+        <li><strong>Regulatorische Konformität:</strong> Unterstützt z. B. FDA 21 CFR Part 11, ISO 17025, ALCOA+.</li>
+        <li><strong>Datenanalyse und Reporting:</strong> Liefert Berichte und Einblicke für fundierte Entscheidungen.</li>
       </ul>
-    </section>
+      <p>Weitere Informationen findest du in folgenden NCBI/PubMed-Quellen:</p>
+      <ul>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/17238388/">Hao Li et al. – Model driven laboratory information management systems</a></li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/27807749/">Yalan Chen et al. – LIMS and Clinical Data Management</a></li>
+      </ul>
+    </div>
+
+    <button class="accordion">LIMS vs. ELN vs. LES</button>
+    <div class="panel">
+      <p>Diese Systeme erfüllen unterschiedliche Aufgaben:</p>
+      <ul>
+        <li><strong>LIMS:</strong> Verwaltung von Proben, Daten und Laborprozessen.</li>
+        <li><strong>ELN:</strong> Elektronische Laborjournale zur Dokumentation von Experimenten.</li>
+        <li><strong>LES:</strong> Standardisierte Durchführung von Laboraktivitäten.</li>
+      </ul>
+    </div>
+
+    <button class="accordion">Schlüsselmerkmale eines LIMS</button>
+    <div class="panel">
+      <ul>
+        <li><strong>Probenverfolgung:</strong> Lückenlose Rückverfolgbarkeit.</li>
+        <li><strong>Integration:</strong> Verbindung mit Laborinstrumenten und Datenbanken.</li>
+        <li><strong>Compliance:</strong> Unterstützung gängiger Normen und Richtlinien.</li>
+        <li><strong>Automatisierung:</strong> Optimierung durch digitale Prozesse.</li>
+      </ul>
+    </div>
+
+    <button class="accordion">Regulatorische Konformität</button>
+    <div class="panel">
+      <p>Ein LIMS unterstützt die Einhaltung wichtiger Vorschriften:</p>
+      <ul>
+        <li><strong>GxP:</strong> Gute Labor- und Herstellungspraxis (GLP, GMP).</li>
+        <li><strong>FDA 21 CFR Part 11:</strong> Elektronische Daten & Signaturen.</li>
+        <li><strong>ISO 17025:</strong> Kompetenzanforderungen für Prüflabore.</li>
+        <li><strong>ALCOA+:</strong> Grundsätze für Datenintegrität.</li>
+      </ul>
+    </div>
+
+    <button class="accordion">Beliebte LIMS-Anbieter</button>
+    <div class="panel">
+      <p>Marktführende LIMS-Lösungen sind unter anderem:</p>
+      <ul>
+        <li><strong>LabWare</strong> – Sehr anpassungsfähiges Enterprise-LIMS.</li>
+        <li><strong>STARLIMS</strong> – Integriertes System mit Analytikfunktionen.</li>
+        <li><strong>LabVantage</strong> – Skalierbares, webbasiertes LIMS.</li>
+        <li><strong>Bika LIMS</strong> – Open-Source-Lösung für Labore.</li>
+      </ul>
+    </div>
+
+    <button class="accordion">Implementierungsleitfaden</button>
+    <div class="panel">
+      <p>Schritte zur erfolgreichen LIMS-Einführung:</p>
+      <ul>
+        <li><strong>Anforderungsanalyse:</strong> Was braucht das Labor wirklich?</li>
+        <li><strong>Anbieterauswahl:</strong> Funktionen, Kosten und Support vergleichen.</li>
+        <li><strong>Systemkonfiguration:</strong> Anpassung an bestehende Abläufe.</li>
+        <li><strong>Validierung & Schulung:</strong> Akzeptanz und Compliance sicherstellen.</li>
+      </ul>
+    </div>
   </main>
-  
+
   <footer>
     <div style="text-align: center; padding: 20px; background-color: #1f1f1f; color: #ffffff;">
       <p style="margin: 5px 0;">&copy; 2025 LIMS Wiki</p>
       <p style="margin: 5px 0;">
         📬 <a href="mailto:digitallabs4.0@gmail.com" style="color: #4da6ff; text-decoration: none;">
-          E-Mail schreiben
+          Schreib uns eine E-Mail
         </a>
       </p>
     </div>
   </footer>
-  
 </body>
 </html>

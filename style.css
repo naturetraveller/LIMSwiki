@@ -1,10 +1,15 @@
-/* Basic dark theme styling */
+/* Auto-generated responsive dark theme CSS — 2025-03-22 */
+
+/* Base dark styling */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #121212;
   color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1, h2 {
@@ -17,7 +22,18 @@ p {
   line-height: 1.6;
 }
 
-/* Language navbar styling */
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+  margin: 20px 0;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+ul li strong {
+  color: #4da6ff;
+}
+
 .language-navbar {
   position: absolute;
   right: 10px;
@@ -25,7 +41,7 @@ p {
 }
 
 .language-navbar ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
 }
 
@@ -44,7 +60,6 @@ p {
   color: #ffffff;
 }
 
-/* Main navigation styling (square tiles) */
 .main-navbar {
   display: flex;
   justify-content: center;
@@ -52,11 +67,11 @@ p {
 }
 
 .main-navbar ul {
-  list-style-type: none;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  list-style: none;
+  padding: 0;
 }
 
 .main-navbar li {
@@ -70,7 +85,7 @@ p {
   color: white;
   text-align: center;
   text-decoration: none;
-  width: 150px;
+  width: clamp(120px, 20vw, 150px);
   height: 100px;
   line-height: 2.5;
   border-radius: 10px;
@@ -83,7 +98,6 @@ p {
   background-color: #4da6ff;
 }
 
-/* Banner section styling */
 .banner-section {
   position: relative;
   background: url('bannerDigitallabs4.0.webp') no-repeat center center;
@@ -96,90 +110,37 @@ p {
 .banner-section::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: -1;
-}
-
-h1 {
-  font-size: 3em;
-}
-
-p, ul {
-  font-size: 1.2em;
-}
-
-ul li {
-  padding: 10px 0;
-  font-size: 1.1em;
-  line-height: 1.5;
-}
-
-ul li strong {
-  font-weight: bold;
-  color: #4da6ff; /* Optional: Adds a color to highlight bold text */
-}
-
-/* Footer styling */
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #1f1f1f;
-  color: white;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-
-/* Fix for list styling */
-ul {
-  list-style-type: none;
-  padding-left: 20px;
-  margin: 20px 0;
-}
-
-ul li {
-  padding: 10px 0;
-  font-size: 1.1em;
-  line-height: 1.5;
-}
-
-ul li strong {
-  font-weight: bold;
-  color: #4da6ff; /* Optional: Adds a color to highlight bold text */
 }
 
 .accordion {
   background-color: #333;
   color: white;
-  padding: 10px;
-  width: 100%;
-  text-align: left;
-  border: none;
   cursor: pointer;
-}
-.panel {
-  display: none;
-  padding: 10px;
-  background-color: #222;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 18px;
+  transition: 0.3s;
 }
 
-/* Ensure the footer stays at the bottom */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
+.accordion:hover {
+  background-color: #4da6ff;
+}
+
+.panel {
+  display: none;
+  background-color: #1f1f1f;
+  padding: 15px;
+  border-left: 4px solid #4da6ff;
 }
 
 main {
   flex: 1;
-  padding-bottom: 20px; /* Adds space between content and footer */
+  padding-bottom: 20px;
 }
 
 footer {
@@ -189,4 +150,45 @@ footer {
   padding: 15px;
   width: 100%;
   margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-navbar a {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .accordion {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .panel {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  body, p, li {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+    padding: 0 10px;
+  }
+
+  .language-navbar {
+    top: auto;
+    bottom: 10px;
+    right: 10px;
+  }
 }
