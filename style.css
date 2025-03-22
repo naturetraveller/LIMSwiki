@@ -196,23 +196,41 @@ footer {
 
   .language-navbar {
     position: fixed;
-    bottom: 10px;
+    top: 10px;
     right: 10px;
-    background-color: #1f1f1f;
+    z-index: 1000;
+    background-color: rgba(31, 31, 31, 0.95);
     padding: 5px 10px;
     border-radius: 8px;
-    z-index: 1000;
   }
-
+  
   .language-navbar ul {
     display: flex;
     gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
-
+  
   .language-navbar li {
     margin: 0;
   }
-}
+  
+  .language-navbar a {
+    color: #4da6ff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .language-navbar a.active {
+    color: #ffffff;
+  }
+  
+  /* Shift content down so it's not hidden under the navbar */
+  .main-navbar {
+    margin-top: 60px; /* oder mehr, je nach Höhe der language-navbar */
+  }
+  
 
 /* Global link styling */
 a {
