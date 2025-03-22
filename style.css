@@ -192,3 +192,14 @@ footer {
     right: 10px;
   }
 }
+
+/* Global link styling */
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4da6ff;
+  text-decoration: underline;
+}
